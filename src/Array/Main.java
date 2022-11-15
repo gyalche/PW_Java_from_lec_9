@@ -18,6 +18,18 @@ class ArrayExample{
         System.out.println( names[1]);
         System.out.println( names[2]);
 
+        //for each loop;
+        for(int age:ages){
+            System.out.println(age);
+        }
+
+        //while loop;
+        int i=0;
+        while(i<ages.length){
+            System.out.println(ages[i]);
+            i+=1;
+        }
+
     }
 
     void multiArrays(){
@@ -27,9 +39,17 @@ class ArrayExample{
         System.out.println(arr[0][1]);//2
         System.out.println(arr[0][2]);//3
 
+        System.out.println("Array length"+ arr.length);
         //3D array;
         int [][][] arr_3=new int[5][3][2];
         arr_3[0][0][0]=1;
+
+        //travesring multi array;
+        for(int i=0;  i<arr.length; i++){
+            for(int j=0; j<arr[i].length; j++){
+                System.out.println(arr[i][j]);
+            }
+        }
 
     }
 }
