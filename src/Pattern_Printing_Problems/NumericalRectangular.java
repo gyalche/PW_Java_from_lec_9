@@ -1,7 +1,11 @@
 package Pattern_Printing_Problems;
 
 import java.util.Scanner;
-
+//          12345
+//        23451
+//        34512
+//        45123
+//        51234
 public class NumericalRectangular {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
