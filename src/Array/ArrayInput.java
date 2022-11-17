@@ -1,5 +1,6 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayInput {
@@ -25,6 +26,17 @@ public class ArrayInput {
         int[] arr_2=arr;
         System.out.println("Copied array");
         printArray(arr_2);
+
+        // clone without mutation;
+        int[] arr_3=arr.clone();
+        System.out.println("clone");
+        printArray(arr_3);
+
+        //Default array method;
+        int[] arr_4= Arrays.copyOf(arr, arr.length);
+        System.out.println("Default array method copyof");
+        printArray(arr_4);
+
 
         //change some value of arr_2
         arr_2[0]=0;
