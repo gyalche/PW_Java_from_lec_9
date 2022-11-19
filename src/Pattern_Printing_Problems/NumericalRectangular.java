@@ -1,7 +1,7 @@
 package Pattern_Printing_Problems;
 
 import java.util.Scanner;
-//          12345
+//        12345
 //        23451
 //        34512
 //        45123
