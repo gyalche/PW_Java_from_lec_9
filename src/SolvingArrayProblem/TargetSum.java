@@ -1,6 +1,4 @@
 package SolvingArrayProblem;
-
-
 //Find the total number of pairs in the Array whose sum is equal to the give value x;
 public class TargetSum {
     public static void main(String[] args) {
