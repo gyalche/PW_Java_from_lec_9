@@ -19,16 +19,34 @@ public class Rotate {
         return ans;
     }
 
+    static void swap(int arr[], int i, int j){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    static void reverse(int[] arr, int i, int j){
+        while(i<j){
+            swap(arr, i , j);
+            i--;
+            j++;
+        }
+    }
+    static void rotateInPlace(int[] arr, int k){
+        int n=arr.length;
+        k=k%n;
+        reverse(arr,  0, n-k-1);
+        reverse(arr, n-k, n-1);
+        reverse(arr, 0, n-1);
+
+    }
     static void printArray(int[] arr){
         for(int i=0; i<arr.length; i++){
-            System.out.print(arr[i]);
+            System.out.println(arr[i]);
         }
     }
     public static void main(String[] args) {
-
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size of the array");
-
         int n=sc.nextInt();
         int []arr=new int[n];
         System.out.println("Enter the elements");
@@ -42,9 +60,14 @@ public class Rotate {
         System.out.println("Print originnal Array");
         printArray(arr);
 
-        int [] ans=rotate(arr, r);
+//        int [] ans=rotate(arr, r);
+        rotateInPlace(arr, r);
         System.out.println("Arrary afoter rotation");
-        printArray(ans);
+//        printArray(ans);
+
+        printArray(arr);
+
+
 
 
     }
