@@ -17,7 +17,7 @@ public class ReverseArray {
     static void swapInArray(int[] arr, int i, int j){
         int temp=arr[i];
         arr[i]=arr[j];
-        arr[j]=arr[i];
+        arr[j]=temp;
     }
     static void reverseOriginalArray(int [] arr){
 
