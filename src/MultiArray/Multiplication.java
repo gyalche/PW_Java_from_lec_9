@@ -18,7 +18,6 @@ public class Multiplication {
             return;
         }
         int[][] mul=new int[r1][c2];
-
         for(int i=0; i<r1; i++){//row number
             for(int j=0; j<c2; j++){ //column number
                 for(int k=0; k<c1; k++){
