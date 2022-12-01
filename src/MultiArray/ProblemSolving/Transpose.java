@@ -23,6 +23,16 @@ public class Transpose {
         return transpose;
     }
 
+    static void transposeInPlace(int[][] matrix, int r, int c){
+            for(int i=0; i<c; i++){
+                for(int j=i; j<r; j++){
+                    //swap matrix[i][j]=matrix[j][i]
+                    int temp=matrix[i][j];
+                    matrix[i][j]=matrix[j][i];
+                    matrix[j][i]=temp;
+                }
+            }
+    }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter number  of rows and  column of matrix");
@@ -42,8 +52,12 @@ public class Transpose {
         printMatrix(matrix);
 
         System.out.println("Transpose of Matrix");
-        int[][] ans=findTranspose(matrix, r, c);
-        printMatrix(ans);
+//        int[][] ans=findTranspose(matrix, r, c);
+//        printMatrix(ans);
+
+        //transpose inplace matrix;
+        transposeInPlace(matrix, r, c);
+        printMatrix(matrix);
 
 
     }
