@@ -23,6 +23,7 @@ public class Transpose {
         return transpose;
     }
 
+    //inplace transpose can only be done when we have square matrix
     static void transposeInPlace(int[][] matrix, int r, int c){
             for(int i=0; i<c; i++){
                 for(int j=i; j<r; j++){

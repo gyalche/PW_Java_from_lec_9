@@ -1,7 +1,7 @@
 package MultiArray.ProblemSolving;
 
 import java.util.Scanner;
-
+//given a square matrix, turn it by 90 degree in a clock wise direction without using an extra space
 public class RotationMatrix {
     static void printMatrix(int[][] matrix){
         for(int i=0; i<matrix.length; i++){
