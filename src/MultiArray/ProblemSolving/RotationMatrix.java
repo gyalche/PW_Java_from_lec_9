@@ -29,7 +29,7 @@ public class RotationMatrix {
             arr[i]=arr[j];
             arr[j]=temp;
             i++;
-            j++;
+            j--;
         }
     }
     static void rotate(int[][] matrix, int n){
