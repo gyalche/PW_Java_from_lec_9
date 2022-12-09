@@ -13,13 +13,17 @@ public class RotateArray {
         }
 
     }
+    static void printArray(int[] arr){
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i]);
+        }
+    }
     static void rotate(int[] arr, int k){
         int n=arr.length;
         k=k%n;
         reverse(arr, 0, n-1);
         reverse(arr, 0, k);
         reverse(arr, k, n-1);
-
 
     }
     public static void main(String[] args) {
@@ -28,7 +32,8 @@ public class RotateArray {
         int k=3;
         System.out.println("Rotate array of 3 is ");
 
-
+        rotate(arr, k);
+        printArray(arr);
 
     }
 }
