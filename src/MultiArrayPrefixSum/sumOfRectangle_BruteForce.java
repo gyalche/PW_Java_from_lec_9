@@ -63,9 +63,7 @@ public class sumOfRectangle_BruteForce {
         }
         if(l1>=1 && r1>=1){
             leftUp=matrix[l1-1][r1-1];
-
         }
-
         ans=sum-up-left+leftUp;
 
         return ans;
