@@ -15,7 +15,6 @@ public class main {
         l1.add(6);
         l1.add(7);
 
-
         //get an element ar index i;
         System.out.println(l1.get(0));
 

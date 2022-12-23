@@ -22,5 +22,20 @@ public class sortArrayListString {
 
         Collections.sort(l, Collections.reverseOrder());
         System.out.println("Descending order Sorting " + l);
+
+        ArrayList<String> s=new ArrayList<>();
+        s.add("apple");
+        s.add("mango");
+        s.add("banana");
+        s.add("pineapple");
+        s.add("cherry");
+        s.add("avacado");
+        System.out.println("Original array " + s);
+        Collections.sort(s);
+        System.out.println("Sorted array " + s);
+        Collections.sort(s, Collections.reverseOrder());
+        System.out.println("Sorted array descending " + s);
+
+
     }
 }
