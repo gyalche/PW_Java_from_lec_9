@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class solvingProblem {
     static int factorial(int n){
-
         //base case
         if(n==0){
             return 1;

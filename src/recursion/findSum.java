@@ -12,7 +12,6 @@ public class findSum {
         return smallAns + n%10;
 
 
-
     }
     public static void main(String[] args) {
         int n=5123;
