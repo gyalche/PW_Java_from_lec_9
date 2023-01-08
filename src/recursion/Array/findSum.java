@@ -8,7 +8,7 @@ public class findSum {
 
         //recursion
          int smallAns= sumRecursion(arr, idx+1);
-            return smallAns+arr[idx];
+        return smallAns+arr[idx];
 
     }
     public static void main(String[] args) {
