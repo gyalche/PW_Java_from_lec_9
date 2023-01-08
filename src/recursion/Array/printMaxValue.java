@@ -16,7 +16,7 @@ public class printMaxValue {
 
     }
     public static void main(String[] args) {
-        int [] arr={3,10,3,2,5};
+        int [] arr={3,10,3,12,5};
 
         System.out.println(printMax(arr, 0));
 
