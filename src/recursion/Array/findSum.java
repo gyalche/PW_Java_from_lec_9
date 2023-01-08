@@ -7,17 +7,14 @@ public class findSum {
         }
 
         //recursion
-
-         int smallAns= sumRecursion(arr, arr[idx+1]);
+         int smallAns= sumRecursion(arr, idx+1);
             return smallAns+arr[idx];
-
-
 
     }
     public static void main(String[] args) {
-        int[] arr={2,3,5,20,1};
-        int idx=0;
-        System.out.println(sumRecursion(arr, idx));
+        int[] arr={1,2,3,4};
+
+        System.out.println(sumRecursion(arr, 0));
 
     }
 }
