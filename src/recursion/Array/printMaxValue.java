@@ -6,7 +6,6 @@ public class printMaxValue {
         if(indx==arr.length-1){
             return arr[indx];
         }
-
         //indx+1, end of the array ->max->recursion
         int smallAns=printMax(arr, indx+1);
 
