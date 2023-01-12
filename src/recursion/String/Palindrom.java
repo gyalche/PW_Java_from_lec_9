@@ -3,12 +3,16 @@ package recursion.String;
 import java.util.Scanner;
 
 public class Palindrom {
+
     static String reverse(String s, int idx){
         if(idx==s.length()) return "";
-
         String smallAns=reverse(s, idx+1);
-
         return smallAns + s.charAt(idx);
+    }
+    //another way;
+    static Boolean isPalindrom(String s, int l, int r){
+        if(l>=r) return true;
+        return(s.charAt(l)==s.charAt(r) && isPalindrom(s, l+1, r-1));
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -21,6 +25,8 @@ public class Palindrom {
         }else{
             System.out.printf("%s is Not Palindrom", s);
         }
+
+        System.out.println(isPalindrom(s, 0, s.length()-1));
 
     }
 }
