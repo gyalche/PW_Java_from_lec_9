@@ -3,7 +3,6 @@ package recursion.String;
 import java.util.Scanner;
 
 public class Palindrom {
-
     static String reverse(String s, int idx){
         if(idx==s.length()) return "";
         String smallAns=reverse(s, idx+1);

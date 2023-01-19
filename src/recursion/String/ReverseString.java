@@ -5,10 +5,8 @@ import java.util.Scanner;
 public class ReverseString {
     static String reverse(String s, int idx){
         if(idx==s.length()) return " ";
-
         //recursive work;
         String smallAns=reverse(s, idx+1);
-
         //self work
         return smallAns + s.charAt(idx);
     }
