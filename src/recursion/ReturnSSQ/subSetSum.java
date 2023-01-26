@@ -7,10 +7,8 @@ public class subSetSum {
             System.out.print(sum);
             return;
         }
-
         //curr idx + sum;
         subsetSum(a, n, idx+1, sum+a[idx]); //include
-
         //curr ans;
         subsetSum(a, n, idx+1, sum); //exclude
     }
