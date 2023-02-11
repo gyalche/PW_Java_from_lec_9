@@ -25,7 +25,8 @@ public class countSort {
         int [] count=new int[max+1];
         for(int i=0; i<arr.length; i++){
             count[arr[i]]++;
-        }        int k=0;
+        }
+        int k=0;
         for(int i=0; i<arr.length; i++){
             for(int j=0; j<count[i]; j++){
                 arr[k++]=i;
