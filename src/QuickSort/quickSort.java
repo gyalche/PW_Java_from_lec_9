@@ -1,7 +1,6 @@
 package QuickSort;
 
 public class quickSort {
-
     static void displayArr(int[] arr){
         for(int a:arr){
             System.out.println(a + " ");
@@ -35,7 +34,6 @@ public class quickSort {
     }
     static void quickSort(int[]arr, int start, int end){
         if(start>=end) return;
-
         //do partition;
         int pi=parition(arr, start, end);
         quickSort(arr, start, pi-1);

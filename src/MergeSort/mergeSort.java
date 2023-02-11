@@ -6,7 +6,6 @@ public class mergeSort {
             System.out.print(a + " ");
         }
     }
-
     static void merge(int[]arr, int l, int mid, int r){
         int n1=mid-l+1;
         int n2=r-mid;
