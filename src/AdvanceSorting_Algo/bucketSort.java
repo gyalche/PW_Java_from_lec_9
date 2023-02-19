@@ -14,18 +14,15 @@ public class bucketSort {
         for(int i=0; i<n; i++){
             bucket[i]= new ArrayList<Float>();
         }
-
         //add elemnt into our bucket;
         for(int i=0; i<n; i++){
             int bucketIndex=(int) arr[i] * n;
             bucket[bucketIndex].add(arr[i]);
         }
-
         //sort each bucket individually;
         for(int i=0; i<bucket.length; i++){
             Collections.sort(bucket[i]);
         }
-
         //merge all the bucket to get final sorted array;
         int index=0;
         for(int i=0; i<bucket.length; i++){
