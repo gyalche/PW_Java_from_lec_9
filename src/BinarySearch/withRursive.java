@@ -16,12 +16,12 @@ public class withRursive {
     }
     public static void main(String[] args) {
         int[]a={1,2,3,4,5,6,7};
-        int target=4;
+        int target=0;
         int n=a.length;
         int start=0;
         int end=n-1;
-
-
         System.out.println(RecursiveBinary(a,start, end, target));
+
+
     }
 }
