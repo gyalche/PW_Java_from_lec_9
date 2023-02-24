@@ -18,11 +18,9 @@ public class question1 {
                 end=mid-1;
             }else if(x>a[mid]){
                 start=mid+1;
-
             }else{
                 end=mid-1;
             }
-
         }
         return ans;
 
