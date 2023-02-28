@@ -8,11 +8,9 @@ package BinarySearch;
 //Output=3;
 
 public class question2 {
-
     static int sqrt(int x){
         int st=0, end=x;
         int ans=-1;
-
         while(st<=end){
             int mid=st + (end-st)/2;
             int val=mid * mid;
