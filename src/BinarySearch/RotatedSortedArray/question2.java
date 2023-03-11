@@ -9,7 +9,7 @@ public class question2 {
         int start=0, end=a.length;
         int ans=-1;
 
-        return 0;
+    return true;
     }
     public static void main(String[] args) {
         int[]arr={0,0,0,1,1,2,0,0,0};
